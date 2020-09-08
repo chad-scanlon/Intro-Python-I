@@ -26,7 +26,23 @@ This would mean that from the command line you would call `python3 14_cal.py 4 2
 print out a calendar for April in 2015, but if you omit either the year or both values, 
 it should use today’s date to get the month and year.
 """
-
+# python3 14_cal.py
 import sys
 import calendar
 from datetime import datetime
+
+
+def cal(mm, yy=2020):
+  if mm <1:
+    return mm == 10
+  print(calendar.month(yy,mm))
+
+cal(7,1990)
+
+
+
+
+
+
+
+
